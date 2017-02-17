@@ -1,0 +1,41 @@
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script type="text/javascript" src="script.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+  
+<body>
+  <div id="title" class="text-center">
+    <h2>Counting and Limiting Characters</h2>
+    <h4>Type in the box</h4>
+    <h5>And watch the remaining characters</h5>
+  </div>
+  
+  <div class="box">
+    <div class="calc">
+       <form>
+         <!--function: countDispaly -->
+         <textarea name="ta" rows="6" style="width:340px;" onKeyDown="textCounter(this.form.ta,this.form.countDisplay);" onKeyUp="textCounter(this.form.ta,this.form.countDisplay);">               </textarea>
+        <br>
+        <input readonly type="text" name="countDisplay" size="3" maxlength="3" value="250"> Characters Remaining
+      </form>
+      
+      </div> <!-- end of calc-->
+  </div> <!-- end of box -->
+  
+  
+  <div class="row text-center"> <!-- for footer -->
+      <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria Batsou</a> | <a href="http://codepen.io/EleftheriaBatsou" target="_blank">Projects</a></h5>
+    </div> <!-- end footer -->
+  
+</body>
+</html>
+
+
+
